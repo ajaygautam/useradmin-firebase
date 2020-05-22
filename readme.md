@@ -25,5 +25,23 @@ Can't seem to find any documentation on how to deploy a java based firebase serv
 1. Create `firebase.json` (`firebase deploy` fails without this file!)
 1. Run `firebase deploy --only functions` - NOT WORKING YET :(
 
+```
+$ firebase deploy
+
+=== Deploying to 'my-app'...
+
+i  deploying functions
+Running command: mvn install
+<...trimmed...>
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+<...trimmed...>
+✔  functions: Finished running predeploy script.
+
+Error: No npm package found in functions source directory. Please run 'npm init' inside .
+```
+Trying to fix - why do I need `npm init` in this??
+
 ## Call it
 TODO
