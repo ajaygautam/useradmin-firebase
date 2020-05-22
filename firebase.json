@@ -1,0 +1,16 @@
+{
+  "name": "useradmin",
+  "description": "Firebase Functions",
+  "private": true,
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "functions": {
+    "source": ".",
+    "predeploy": [
+      "mvn install"
+    ]
+  }
+}
